@@ -1,0 +1,172 @@
+/*---------------
+    RESET
+---------------*/
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+/*---------------
+    DEBUG
+---------------*/
+.debug header {
+    background-color: #add8e6;
+}
+.debug .header-top .container {
+    background-color: #daa520;
+}
+.debug .header-top .row > * {
+    border: 2px dashed;
+    padding: 10px 5px;
+}
+.debug section .row {
+    height: 400px;
+}
+.debug section .row > * {
+    border: 2px dashed;
+}
+.debug .col-big {
+    background-color: #1e90ff;
+}
+.debug .col-small {
+    background-color: #ffc0cb;
+}
+.debug .hero {
+    background-color: #00008b;
+    height: 500px;
+}
+
+.debug .hero .container-small {
+    background-color: #ee82ee;
+    height: 100%;
+    border: 2px dashed;
+}
+
+.debug section:last-child .container {
+    height: 900px;
+    background-color: green;
+    border: 2px dashed;
+}
+.debug footer {
+    background-color: #23272a;
+}
+
+.debug .footer-top {
+    border-bottom: 2px solid #fff;
+}
+.debug .footer-top > .row{
+    height: 400px;
+    border: 2px dashed;
+}
+.debug .footer-top .row .col-small {
+    background-color: #f08080;
+}
+.debug .footer-top .col-big {
+    background-color: #20b2aa;
+}
+.debug .footer-top .col-big .col {
+    border: 2px dashed white;
+}
+.debug .footer-bottom .container {
+    background-color: #7fffd4;
+    height: 50px;
+}
+
+.debug .footer-bottom .row > * {
+    background-color: #ffb6c1;
+    border: 2px dashed;
+    padding: 0 5px;
+}
+
+/*---------------
+    COMMON
+---------------*/
+.container, .container-small {
+    margin: auto;
+}
+.container {
+    max-width: 1200px;
+}
+.container-small {
+    max-width: 900px;
+}
+.row {
+    display: flex;
+}
+
+/*---------------
+    HEADER
+---------------*/
+.header-top {
+    padding: 16px 0;
+}
+.header-top .row {
+    align-items: center;
+}
+.logo, .login {
+    width: 20%;
+    padding: 0 5px;
+}
+.main-nav {
+    width: 60%;
+}
+.main-nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+}
+.main-nav ul li {
+    margin: 0 10px;
+}
+.main-nav ul li a {
+    text-decoration: none;
+    color: inherit;
+}
+.login {
+    text-align: right;
+}
+
+.hero {
+    padding: 50px 0;
+}
+/*---------------
+    MAIN
+---------------*/
+section {
+    padding: 40px 0;
+}
+section:nth-child(2n) {
+    background-color: #d3d3d3;
+}
+
+.col-big {
+    width: 60%;
+}
+.col-small {
+    width: 40%;
+}
+
+/*---------------
+    FOOTER
+---------------*/
+.footer-top {
+    padding: 10px 0 30px 0;
+}
+.footer-top .col-small {
+    width: 25%;
+}
+.footer-top .col-big {
+    width: 75%;
+}
+.footer-top .col-big .col {
+    width: 25%;
+}
+
+.footer-bottom {
+    padding-top: 30px;
+} 
+.footer-bottom .row {
+    justify-content: space-between;
+    align-items: center;
+}
